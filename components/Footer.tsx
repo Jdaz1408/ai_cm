@@ -4,6 +4,7 @@ import {
   Container,
   Stack,
   Text,
+  Link,
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react"
@@ -45,8 +46,8 @@ const SocialButton = ({
 export default function SmallWithSocial() {
   return (
     <Box
-      bg={useColorModeValue("gray.50", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      bg={useColorModeValue("gray.800", "gray.800")}
+      color={useColorModeValue("gray.200", "gray.200")}
     >
       <Container
         as={Stack}
@@ -57,18 +58,10 @@ export default function SmallWithSocial() {
         justify={{ base: "center", md: "space-between" }}
         align={{ base: "center", md: "center" }}
       >
-        <Text>© 2022 Chakra Templates. All rights reserved</Text>
-        <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
-            <FaTwitter />
-          </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
-          </SocialButton>
-        </Stack>
+        <Text>© 2025 AI-CM. Todos los derechos reservados</Text>
+        <Link href="/terms-of-service" color="gray.400" _hover={{ color: "white" }}>
+          Términos de Servicio
+        </Link>
       </Container>
     </Box>
   )

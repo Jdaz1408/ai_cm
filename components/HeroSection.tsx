@@ -26,22 +26,23 @@ export default function CallToActionWithAnnotation() {
           as={Box}
           textAlign={"center"}
           spacing={{ base: 8, md: 14 }}
-          py={{ base: 20, md: 36 }}
+          pt={{ base: 7, md: 14 }}
+          pb={{ base: 3, md: 6}}
         >
           <Heading
             fontWeight={600}
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            Make money from <br />
+            Tu marca, <br />
             <Text as={"span"} color={"green.400"}>
-              your audience
+            siempre activa
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Monetize your content by charging your most loyal readers and reward
-            them loyalty points. Give back to your loyal readers by granting
-            them access to your pre-releases and sneak-peaks.
+          Logra que tu marca hable con tus seguidores en cualquier momento del día (o de la noche). 
+          Nuestro servicio de Community Manager con IA no solo gestiona publicaciones, sino que también responde
+          mensajes y comentarios de forma automática y acertada.
           </Text>
           <Stack
             direction={"column"}
@@ -51,6 +52,9 @@ export default function CallToActionWithAnnotation() {
             position={"relative"}
           >
             <Button
+              as="a"
+              href="https://wa.link/gfpre8"
+              target="_blank"
               colorScheme={"green"}
               bg={"green.400"}
               rounded={"full"}
@@ -59,10 +63,17 @@ export default function CallToActionWithAnnotation() {
                 bg: "green.500",
               }}
             >
-              Get Started
+             Solicita una demostración
             </Button>
-            <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
-              Learn more
+            <Button 
+              as="a"
+              href="https://wa.link/gfpre8"
+              target="_blank"
+              variant={"link"} 
+              colorScheme={"blue"} 
+              size={"sm"}
+            >
+              Contacta un asesor 
             </Button>
             <Box>
               <Icon
@@ -81,7 +92,7 @@ export default function CallToActionWithAnnotation() {
                 top={"-15px"}
                 transform={"rotate(10deg)"}
               >
-                Starting at $15/mo
+                Primer mes 20% de descuento
               </Text>
             </Box>
           </Stack>

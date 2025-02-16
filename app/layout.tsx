@@ -1,5 +1,5 @@
 "use client"
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
 
 import WithSubnavigation from "@/components/Navbar"
 import SmallWithSocial from "@/components/Footer"
@@ -19,6 +19,7 @@ export default function RootLayout({
 
       <body>
         <ChakraProvider>
+          <ColorModeScript initialColorMode="dark" />
           <div>
             <WithSubnavigation />
             {children}

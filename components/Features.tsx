@@ -10,7 +10,9 @@ import {
   Icon,
   useColorModeValue,
 } from "@chakra-ui/react"
-import { IoAnalyticsSharp, IoLogoBitcoin, IoSearchSharp } from "react-icons/io5"
+import { IoAnalyticsSharp } from "react-icons/io5"
+import { BiMessageRoundedDots } from "react-icons/bi"
+import { RiCustomerService2Line } from "react-icons/ri"
 import { ReactElement } from "react"
 
 interface FeatureProps {
@@ -52,12 +54,13 @@ export default function SplitWithImage() {
             alignSelf={"flex-start"}
             rounded={"md"}
           >
-            Our Story
+            ¿Cómo se logra?
           </Text>
-          <Heading>A digital Product design agency</Heading>
+          <Heading>Community Manager IA</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore
+          Mediante la combinación de inteligencia artificial y estrategias de marketing digital 
+          entendemos a tu audiencia y ofrecemos respuestas relevantes en el momento adecuado.
+
           </Text>
           <Stack
             spacing={4}
@@ -72,19 +75,19 @@ export default function SplitWithImage() {
                 <Icon as={IoAnalyticsSharp} color={"yellow.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("yellow.100", "yellow.900")}
-              text={"Business Planning"}
+              text={"Monitoreo 24/7 de mensajes y menciones"}
             />
             <Feature
-              icon={<Icon as={IoLogoBitcoin} color={"green.500"} w={5} h={5} />}
+              icon={<Icon as={BiMessageRoundedDots} color={"green.500"} w={5} h={5} />}
               iconBg={useColorModeValue("green.100", "green.900")}
-              text={"Financial Planning"}
+              text={"Ajuste dinámico de estrategias de contenido"}
             />
             <Feature
               icon={
-                <Icon as={IoSearchSharp} color={"purple.500"} w={5} h={5} />
+                <Icon as={RiCustomerService2Line} color={"purple.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("purple.100", "purple.900")}
-              text={"Market Analysis"}
+              text={"Respuestas alineadas con la identidad de tu marca"}
             />
           </Stack>
         </Stack>
