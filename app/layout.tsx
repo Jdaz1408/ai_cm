@@ -1,5 +1,5 @@
 "use client"
-import { ChakraProvider, ColorModeScript } from "@chakra-ui/react"
+import { ChakraProvider, ColorModeScript, Box } from "@chakra-ui/react"
 
 import WithSubnavigation from "@/components/Navbar"
 import SmallWithSocial from "@/components/Footer"
@@ -17,14 +17,14 @@ export default function RootLayout({
       */}
       <head />
 
-      <body>
+      <body style={{ margin: 0, padding: 0 }}>
         <ChakraProvider>
           <ColorModeScript initialColorMode="dark" />
-          <div>
+          <Box bg="gray.800" minH="100vh" margin={0} padding={0}>
             <WithSubnavigation />
             {children}
-            <SmallWithSocial/>
-          </div>
+            <SmallWithSocial />
+          </Box>
         </ChakraProvider>
       </body>
     </html>
