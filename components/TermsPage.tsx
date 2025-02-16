@@ -52,7 +52,7 @@ export default function TermsPage() {
                 El cliente es responsable de mantener la seguridad de sus credenciales de acceso.
               </ListItem>
               <ListItem>
-                El servicio se proporciona "tal cual" y puede estar sujeto a modificaciones o mejoras.
+                El servicio se proporciona &quot;tal cual&quot; y puede estar sujeto a modificaciones o mejoras.
               </ListItem>
             </UnorderedList>
           </Box>
